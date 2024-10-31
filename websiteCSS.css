@@ -35,8 +35,9 @@ body {
 }
 
 .movingStrip {
-  color: white;
+  color: aqua;
   font-style: italic;
+  font-size: clamp(13px, 3.5vw, 50px);
 }
 
 nav {
@@ -65,7 +66,7 @@ nav ul li a {
   display: block;
   padding: 10px 10px 10px 10px;
   color: white;
-  font-size: clamp(13px, 2vw, 16px);
+  font-size: clamp(13px, 2vw, 20px);
   text-align: center;
   text-decoration: none;
 }
@@ -80,10 +81,6 @@ nav ul li:hover {
   background-color: #ffffff;
   min-width: 160px;
   z-index: 20;
-}
-
-.marquee {
-  z-index: -5;
 }
 
 .dropdown a {
@@ -107,21 +104,15 @@ nav ul li:hover > a {
   font-family: sans-serif;
   color: #fffaff;
   display: flex;
-  /* gap: 0px; */
-  /* padding: 55px; */
-  /* background-color: #fff; */
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
-  /* background-color: #5555; */
-
-  /* border-radius: 10px; */
 }
 
 .namePart {
-  color: #fffaff;
+  color: #fdfd96;
   font-weight: 900;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -134,8 +125,8 @@ nav ul li:hover > a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin: 20px;
+  gap: 10px;
+  margin: 15px;
 }
 
 .contactCard {
@@ -147,8 +138,8 @@ nav ul li:hover > a {
 }
 
 .contactName {
-  font-size: clamp(24px, 3vw, 40px);
-  color: #d39e00;
+  font-size: clamp(24px, 3vw, 80px);
+  color: #6abaeb;
   padding: 0px 5px;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -156,15 +147,24 @@ nav ul li:hover > a {
 }
 
 .contactNum {
-  font-size: 20px;
+  font-size: clamp(24px, 3.5vw, 40px);
   color: rgb(153, 153, 153);
   font-family: monospace;
 }
 
 .address {
   color: #9c9c9c;
-  font-size: clamp(20px, 4vw, 34px);
+  font-size: clamp(20px, 4vw, 38px);
   display: flex;
   font-family: monospace;
   justify-content: center;
+  font-weight: 900;
+}
+
+#contactNumBlue {
+  color: #6abaeb;
+}
+
+#addressBlue {
+  color: #6abaeb;
 }
